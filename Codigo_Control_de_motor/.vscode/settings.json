@@ -1,0 +1,15 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\YUNELY\\esp\\v5.4\\esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.toolsPathWin": "C:\\Users\\YUNELY\\.espressif",
+    "files.associations": {
+        "gpio.h": "c",
+        "queue.h": "c",
+        "timers.h": "c",
+        "math.h": "c",
+        "mcpwm_gen.h": "c"
+    }
+}
