@@ -44,18 +44,18 @@
 GPIOs de configuración      *       GPIOs del programa
 GPIO 0                      *       GPIO 1 - ADC
 GPIO 3                      *       GPIO 2 - BOTÓN
-GPIO 45                     *       GPIO 38 - LSA
-GPIO 46                     *       GPIO 37 - LSC
-                            *       GPIO 5 - PWM 1
-                            *       GPIO 4 - PWM 2
+GPIO 45                     *       GPIO 37 - LSA
+GPIO 46                     *       GPIO 38 - LSC
+                            *       GPIO 4 - PWM 1
+                            *       GPIO 5 - PWM 2
 */
 
 //Macros para los pines del microcontrolador
 #define GPIO_BOTON 2
-#define GPIO_LSA 38
-#define GPIO_LSC 37
-#define GPIO_PWM_1 5
-#define GPIO_PWM_2 4
+#define GPIO_LSA 37
+#define GPIO_LSC 38
+#define GPIO_PWM_1 4
+#define GPIO_PWM_2 5
 
 
 //Manejadores de eventos y variables que se utilizarán en el ADC
@@ -132,7 +132,7 @@ mcpwm_gen_handle_t handle_generator_1;
 mcpwm_gen_handle_t handle_generator_2;
 mcpwm_generator_config_t config_generator_1 =
 {
-    .gen_gpio_num = GPIO_PWM_1,     // Elegimos el GPIO 5 como salida del PWM 1
+    .gen_gpio_num = GPIO_PWM_1,     // Elegimos el GPIO 4 como salida del PWM 1
     .flags.invert_pwm = false,      // Elegimos no invertir la señal PWM 1
     .flags.pull_up = false,
     .flags.pull_down = true,        // Habilitamos una resistencia pull-down en el GPIO del PWM 1
@@ -141,7 +141,7 @@ mcpwm_generator_config_t config_generator_1 =
 };
 mcpwm_generator_config_t config_generator_2 =
 {
-    .gen_gpio_num = GPIO_PWM_2,     // Elegimos el GPIO 4 como salida del PWM 2
+    .gen_gpio_num = GPIO_PWM_2,     // Elegimos el GPIO 5 como salida del PWM 2
     .flags.invert_pwm = false,      // Elegimos no invertir la señal PWM 2
     .flags.pull_up = false,
     .flags.pull_down = true,        // Habilitamos una resistencia pull-down en el GPIO del PWM 2
@@ -462,11 +462,22 @@ esp_err_t Creacion_de_las_tareas(void)
 //Función principal del microcontrolador donde se llaman a las demás funciones para configurar procesos, variables y periféricos
 void app_main(void)
 {
+    //Llamamos la función que configura los GPIOs donde están conectados los sensores y el botón
     Configuracion_GPIO();
+
+    //Llamamos la función que configura el periférico del ADC para leer el voltaje del potenciómetro
     Configuracion_ADC();
+
+    //Llamamos la función que configura el periférico del PWM del control del motor
     Configuracion_PWM();
+
+    //Llamamos la función que configura los timers que crearemos para verificar cada cierto tiempo el estado de los GPIOs y el ADC
     Creacion_de_los_timers();
+
+    //Llamamos la función que configura las colas que van a comunicar las diferentes tareas del programa para intercambiar datos
     Creacion_de_las_colas();
+
+    //Llamamos la función que configura las diferentes tareas que ejecutará el programa como la lectura de entradas y el control del motor
     Creacion_de_las_tareas();
 }
 
@@ -539,25 +550,25 @@ int Funcion_Inicial(void)
         vTaskDelay(pdMS_TO_TICKS(10));
 
         //Estado inicial ---> Estado cerrando
-        if ((datos_IO.LSA == FALSE) && (datos_IO.LSC == FALSE))
+        if ((datos_IO.LSA == TRUE) && (datos_IO.LSC == TRUE))
         {
             return ESTADO_CERRANDO;
         }
 
         //Estado inicial ---> Estado cerrado
-        if ((datos_IO.LSA == FALSE) && (datos_IO.LSC == TRUE))
+        if ((datos_IO.LSA == TRUE) && (datos_IO.LSC == FALSE))
         {
             return ESTADO_CERRADO;
         }
         
         //Estado inicial ---> Estado cerrando
-        if ((datos_IO.LSA == TRUE) && (datos_IO.LSC == FALSE))
+        if ((datos_IO.LSA == FALSE) && (datos_IO.LSC == TRUE))
         {
             return ESTADO_CERRANDO;
         }
 
         //Estado inicial ---> Estado error
-        if ((datos_IO.LSA == TRUE) && (datos_IO.LSC == TRUE))
+        if ((datos_IO.LSA == FALSE) && (datos_IO.LSC == FALSE))
         {
             return ESTADO_ERROR;
         }
@@ -614,7 +625,7 @@ int Funcion_Abriendo(void)
         vTaskDelay(pdMS_TO_TICKS(10));
 
         //Estado abriendo ---> Estado abierto
-        if (datos_IO.LSA == TRUE)
+        if (datos_IO.LSA == FALSE)
         {
             return ESTADO_ABIERTO;
         }
@@ -683,7 +694,7 @@ int Funcion_Cerrando(void)
         vTaskDelay(pdMS_TO_TICKS(10));
 
         //Estado cerrando ---> Estado cerrado
-        if(datos_IO.LSC == TRUE)
+        if(datos_IO.LSC == FALSE)
         {
             return ESTADO_CERRADO;
         }
