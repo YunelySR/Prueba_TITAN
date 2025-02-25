@@ -2686,7 +2686,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fb6187c-7a2a-4fee-aa49-33dbbb9992f9")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 109.22 78.7399 0)
 			(effects
 				(font
@@ -2866,7 +2866,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -3014,7 +3014,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6402786a-c521-4998-b0f2-4fed5cb785e2")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 173.99 80.0099 0)
 			(effects
 				(font
@@ -3194,7 +3194,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -3408,7 +3408,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71803891-8602-482b-9bcd-0cad7183c07a")
-		(property "Reference" "IC3"
+		(property "Reference" "IC4"
 			(at 132.08 64.77 0)
 			(effects
 				(font
@@ -3544,7 +3544,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "IC3")
+					(reference "IC4")
 					(unit 1)
 				)
 			)
@@ -3576,7 +3576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DIONM5436X244N"
+		(property "Footprint" "SamacSys_Parts:DIONM5436X244N"
 			(at 83.82 -27.61 0)
 			(effects
 				(font
@@ -3718,7 +3718,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOD3718X108N"
+		(property "Footprint" "SamacSys_Parts:SOD3718X108N"
 			(at 108.28 82.55 0)
 			(effects
 				(font
@@ -3908,7 +3908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9234ec3-4db6-4379-83ad-9b5308948888")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 152.4 59.69 90)
 			(effects
 				(font
@@ -4085,7 +4085,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -4117,7 +4117,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DIONM5436X244N"
+		(property "Footprint" "SamacSys_Parts:DIONM5436X244N"
 			(at 83.82 -9.83 0)
 			(effects
 				(font
@@ -4241,7 +4241,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff4a7ecb-d9f5-4108-9293-0c502bcc2245")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 185.42 80.0099 0)
 			(effects
 				(font
@@ -4421,7 +4421,7 @@
 		(instances
 			(project "PCB_Control_de_motor"
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)

@@ -2291,7 +2291,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13ea9e74-83d0-470b-bbba-70cc81b13160")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 163.83 72.3899 0)
 			(effects
 				(font
@@ -2471,7 +2471,7 @@
 		(instances
 			(project "PCB_Control_de_motor"
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/a462d8b2-121e-4e22-a61f-10de19663ecd"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -2487,7 +2487,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bc89fec-b98d-4e32-a01a-33fd17848ba3")
-		(property "Reference" "IC2"
+		(property "Reference" "IC3"
 			(at 142.24 49.53 0)
 			(effects
 				(font
@@ -2632,7 +2632,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/a462d8b2-121e-4e22-a61f-10de19663ecd"
-					(reference "IC2")
+					(reference "IC3")
 					(unit 1)
 				)
 			)
@@ -2937,7 +2937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b200f02-a0c6-46aa-9cc9-35faa6e21861")
-		(property "Reference" "C9"
+		(property "Reference" "C10"
 			(at 181.61 73.6599 90)
 			(effects
 				(font
@@ -3063,7 +3063,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/a462d8b2-121e-4e22-a61f-10de19663ecd"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -3211,7 +3211,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "831e4373-3744-41fe-a53b-6609f839b179")
-		(property "Reference" "C10"
+		(property "Reference" "C11"
 			(at 190.5 45.7199 0)
 			(effects
 				(font
@@ -3391,7 +3391,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/a462d8b2-121e-4e22-a61f-10de19663ecd"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 			)
