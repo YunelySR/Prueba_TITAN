@@ -2882,7 +2882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31bb7cf9-5ecd-457f-9e9c-78225b27a8a7")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR039"
 			(at 177.8 96.52 0)
 			(effects
 				(font
@@ -2932,7 +2932,7 @@
 		(instances
 			(project "PCB_Control_de_motor"
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "#PWR034")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -2948,7 +2948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3eba9e24-9e68-4a3c-85ce-ac026cc6f4bd")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR041"
 			(at 201.93 96.52 0)
 			(effects
 				(font
@@ -2998,7 +2998,7 @@
 		(instances
 			(project "PCB_Control_de_motor"
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "#PWR036")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -3210,7 +3210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f22a945-1f2e-4086-a6ce-77a8ed1c1346")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR036"
 			(at 68.58 68.58 0)
 			(effects
 				(font
@@ -3260,7 +3260,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "#PWR031")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -3276,7 +3276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70dc0595-baf2-4d15-bdde-81e13fa859ce")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR037"
 			(at 106.68 93.98 0)
 			(effects
 				(font
@@ -3326,7 +3326,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "#PWR032")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -3342,7 +3342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "711b0c36-00b0-47b7-8ea2-e0b7dd6c1cdf")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR040"
 			(at 201.93 67.31 0)
 			(effects
 				(font
@@ -3392,7 +3392,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "#PWR035")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -3560,7 +3560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73f7a407-1b10-4f8e-bab5-971e3f50229c")
-		(property "Reference" "D1"
+		(property "Reference" "D7"
 			(at 86.36 58.42 0)
 			(effects
 				(font
@@ -3684,7 +3684,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "D1")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -3700,7 +3700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a1615a0-82ac-4fa7-a3b7-f24897a157ed")
-		(property "Reference" "D3"
+		(property "Reference" "D9"
 			(at 205.74 78.2319 90)
 			(effects
 				(font
@@ -3826,7 +3826,7 @@
 		(instances
 			(project ""
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "D3")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -3842,7 +3842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7ed7536-777b-4ad2-96b4-a7874b86f6b4")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR038"
 			(at 147.32 86.36 0)
 			(effects
 				(font
@@ -3892,7 +3892,7 @@
 		(instances
 			(project "PCB_Control_de_motor"
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "#PWR033")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4101,7 +4101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fadfb855-9420-48e3-b09f-ac98f9ad63d8")
-		(property "Reference" "D2"
+		(property "Reference" "D8"
 			(at 86.36 76.2 0)
 			(effects
 				(font
@@ -4225,7 +4225,7 @@
 		(instances
 			(project "PCB_Control_de_motor"
 				(path "/8d17a2c0-3da6-4d80-8f2f-d7746ccde60e/6944256d-9abd-4a40-876b-acdeed9558be"
-					(reference "D2")
+					(reference "D8")
 					(unit 1)
 				)
 			)
